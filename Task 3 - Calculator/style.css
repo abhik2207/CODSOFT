@@ -61,16 +61,26 @@ button {
     color: #FFFFFF;
     font-size: 20px;
     box-shadow: -3px -3px 10px rgba(255, 255, 255, 0.5);
-    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    cursor: grab;
+    background: #1d1d1d;
 }
 
 button:active {
-    transform: scale(0.95, 0.95);
+    transform: scale(0.92, 0.92);
+    cursor: grabbing;
 }
 
 #equals {
     background-color: #e37100;
     color: #FFFFFF;
+}
+
+#equals:hover {
+    background-color: #c96400;
 }
 
 .operator {
